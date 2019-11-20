@@ -1,20 +1,4 @@
-function validation(){
-	var firstname = document.getElementById('edittext_Firstname').value;
-	var lastname = document.getElementById('edittext_Lastname').value;
-	var middlename = document.getElementById('edittext_Middlename').value;
-	var emailAddress = document.getElementById('edittext_EmailAddress').value;
-	var username = document.getElementById('edittext_Username').value;
-	var password = document.getElementById('edittext_Password').value;
- 
-	if((firstname =='')||(lastname =='')||(middlename == '')||(emailAddress == '')||(username == '')||(password == '') ){
-	 window.alert('Some field is empty');
-	 return false;
- }
-
-}
-function send_Data(){
-	var table = document.getElementById('forms').value;
-}
+<script id="applicationScript">
 if (window.console==null) { window["console"] = { log : function() {} } }; // some browsers do not set
 
 var Application = function() {
@@ -1666,3 +1650,4 @@ var Application = function() {
 }
 
 window.application = new Application();
+</script>

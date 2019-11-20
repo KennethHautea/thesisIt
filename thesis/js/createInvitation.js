@@ -1,4 +1,5 @@
 <script id="applicationScript">
+
 if (window.console==null) { window["console"] = { log : function() {} } }; // some browsers do not set
 
 var Application = function() {

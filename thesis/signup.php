@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php include 'config.php';
 	
 
@@ -53,41 +54,27 @@ if(isset($_POST['btn_signup'])){
 *	}	*/
 	
 }
+=======
+<?php 
+  session_start();
+>>>>>>> ffe01d49e7e1f9af050a11a42a9ec8a2d1260e1b
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-<title>Rsvp</title>
-<link rel="stylesheet" type="text/css" href="./style/signupstyle.css">
+<title>Register</title>
+<link rel="stylesheet" type="text/css" href="style/signupstyle.css">
 <link type="text/css" href="js/signupstyle.js">
- </head>
+</head>
 <body>
-<script type = "text/javascript">
-function validation(){
-	var firstname = document.getElementById('edittext_Firstname').value;
-	var lastname = document.getElementById('edittext_Lastname').value;
-	var middlename = document.getElementById('edittext_Middlename').value;
-	var emailAddress = document.getElementById('edittext_EmailAddress').value;
-	var username = document.getElementById('edittext_Username').value;
-	var password = document.getElementById('edittext_Password').value;
- 
-	if((firstname =='')||(lastname =='')||(middlename == '')||(emailAddress == '')||(username == '')||(password == '') ){
-	 window.alert('Some field is Empty!');
-	 return false;
- }
-
-}
-function send_Data(){
-	var table = document.getElementById('forms').value;
-}
-</script>
-	
+<form method="POST" onsubmit="return validate()">
 <div id="Signup">
 	<svg class="Rectangle_4">
 		<rect fill="rgba(227,227,227,1)" stroke="rgba(0,0,0,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_4" rx="30" ry="30" x="0" y="0" width="708" height="835">
 		</rect>
+<<<<<<< HEAD
     </svg>
 
     <!--Signup Form-->  
@@ -162,5 +149,50 @@ function send_Data(){
 	</svg>
 </div>
 
+=======
+	</svg>
+	<div id="btn_Signup">
+		<input type="submit" name="signup" class="Rectangle_5" value="Sign up">
+	</div>
+	<div id="Password">
+		<input type="password" name="firstname" id="edittext_Password" class="edittext_Password" required >
+		<div id="Password_A6_Text_2">
+			<span>Password</span>
+		</div>
+	</div>
+	<div id="Username">
+		<input type="text" name="firstname" id="edittext_Username" class="edittext_Username" required >
+		<div id="Username_A6_Text_3">
+			<span>Username</span>
+		</div>
+	</div>
+	<div id="EmailAddress">
+		<input type="Emails" name="EmailAddress" id="edittext_EmailAddress" class="edittext_EmailAddress" required>
+		<div id="Email_Address">
+			<span>Email Address</span>
+		</div>
+	</div>
+	<div id="Middlename">
+		<input type="text" name="Middlename" id="edittext_Middlename" class="edittext_Middlename">
+		<div id="Middlename_A6_Text_5">
+			<span>Middlename</span>
+		</div>
+	</div>
+	<div id="Lastname">
+		<input type="text" name="Lastname" id="edittext_Lastname" class="edittext_Lastname" required >
+		<div id="Lastname_A6_Text_6">
+			<span>Lastname</span>
+		</div>
+	</div>
+	<div id="Firstname"> 
+		<input type="text" name="firstname" id="edittext_Firstname" class="edittext_Firstname" required>				
+		<div id="Firstname_A6_Text_7">
+			<span>Firstname</span>
+		</div>
+	</div>
+	<?php include 'navbar.php' ?>
+</div>
+</form>
+>>>>>>> ffe01d49e7e1f9af050a11a42a9ec8a2d1260e1b
 </body>
 </html>

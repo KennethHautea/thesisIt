@@ -12,44 +12,15 @@
 <title>Rsvp</title>
 </head>
 <body>
+<<<<<<< HEAD:thesis/index.php
 
+=======
+<!--Login Form-->
+<form method="POST" name = "myform" onsubmit = "return validate()">
+<div id="Loginform">
+	<?php include 'navbar.php' ?>
+>>>>>>> ffe01d49e7e1f9af050a11a42a9ec8a2d1260e1b:thesis/login.php
 
-<script type = "text/javascript">
-function validate(){
-	var username = document.getElementById("val_username").value; 
-}
-</script>
-<div id="Login">
-	<svg class="logo">
-		<pattern elementId="logo_A5_Rectangle_2" id="logo_A5_Rectangle_2_pattern" x="0" y="0" width="100%" height="100%">
-			<image x="0" y="0" width="100%" height="100%" href="logo_A5_Rectangle_2_pattern.png" xlink:href="logo_A5_Rectangle_2_pattern.png"></image>
-		</pattern>
-		<rect fill="url(#logo_A5_Rectangle_2_pattern)" id="logo" rx="0" ry="0" x="0" y="0" width="165" height="53">
-		</rect>
-	</svg>
-	<div id="navbar">
-		<div id="Create_Event">
-			<a href=""><span>Create Event</span></a>
-		</div>
-		<div id="Events">
-			<a href=""><span>Events</span></a>
-		</div>
-		<div id="Account">
-			<a href=""><span>Account</span></a>
-		</div>
-		<div id="Help_Center">
-			<a href=""><span>Help Center</span></a>
-		</div>
-		<div id="Login_A5_Text_5">
-			<a href=""><span>Login</span></a>
-		</div>
-	</div>
-
-
-	<svg class="Line_1">
-		<path fill="transparent" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Line_1" d="M 0 0 L 1280 0">
-		</path>
-	</svg>
 	<svg class="Rectangle_4">
 		<rect fill="rgba(227,227,227,1)" stroke="rgba(0,0,0,1)" stroke-width="1px" stroke-linejoin="miter" 
 		stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_4" rx="30" ry="30" x="0" 
@@ -57,8 +28,12 @@ function validate(){
 		</rect>
 	</svg>
 	
+<<<<<<< HEAD:thesis/index.php
 	<!--Login Form-->
 	<form method="POST" name = "myform" onsubmit = "return validate()" action = "php/login.php">
+=======
+
+>>>>>>> ffe01d49e7e1f9af050a11a42a9ec8a2d1260e1b:thesis/login.php
 		<div id="Username">
 			<input type="text" class="edittext_Username" name="username" id="val_username" required  >
 			<div id="Username_A5_Text_6">
@@ -79,8 +54,9 @@ function validate(){
 		<div id="Create_Account">
 			<a href="signup.php">Create Account</a>
 		</div>
-	</form>
+	
 	
 </div>
+</form>
 </body>
 </html>

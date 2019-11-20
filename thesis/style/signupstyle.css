@@ -1,4 +1,3 @@
-
 	.mediaViewInfo {
 		--web-view-name: Signup;
 		--web-view-id: Signup;
@@ -49,7 +48,6 @@
 		left: 546px;
 		top: 859px;
 		overflow: visible;
-		
 	}
 	.Rectangle_5 {
 		position: absolute;
@@ -58,32 +56,27 @@
 		height: 58px;
 		left: 0px;
 		top: 0px;
-		border-radius: 25px;
-		padding-left: 10px;
+		border-radius: 10px;
 		font-family: Bookman Old Style;
 		font-style: normal;
 		font-weight: bold;
 		font-size: 25px;
 		color: rgba(125,157,233,1);
-		
-	    
 	}
-	/**
 	#SignIn {
 		position: absolute;
-		left: 58px;
-		top: 14px;
 		overflow: visible;
-		width: 85px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: Bookman Old Style;
+        width: 188px;
+        height: 58px;
+        border-radius: 10px;
+		left: 0px;
+        font-family: Bookman Old Style;
 		font-style: normal;
 		font-weight: bold;
 		font-size: 25px;
 		color: rgba(125,157,233,1);
+		top: 0px;
 	}
-	**/
 	#Password {
 		position: absolute;
 		width: 622px;
@@ -385,4 +378,3 @@
 		left: 50px;
 		top: 16px;
 	}
-	
