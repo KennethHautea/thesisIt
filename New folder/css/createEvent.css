@@ -1,0 +1,218 @@
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: Create Event;
+		--web-view-id: Create_Event;
+		--web-scale-on-resize: true;
+		--web-center-horizontally: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Create_Event;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	#Create_Event {
+		position: absolute;
+		box-sizing: border-box;
+		transform: translateX(-50%);
+		left: 50%;
+		background: #E5E5E5;
+		width: 1280px;
+		height: 766px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		--web-view-name: Create Event;
+		--web-view-id: Create_Event;
+		--web-scale-on-resize: true;
+		--web-center-horizontally: true;
+		--web-enable-deep-linking: true;
+	}
+	.logo {
+		position: absolute;
+		overflow: visible;
+		width: 165px;
+		height: 53px;
+		left: 50px;
+		top: 16px;
+	}
+	#navbar {
+		position: absolute;
+		width: 549px;
+		height: 27px;
+		left: 689px;
+		top: 29px;
+		overflow: visible;
+	}
+	#Create_Event_A2_Text_1 {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+		width: 112px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(0,0,0,1);
+	}
+	#Events {
+		position: absolute;
+		left: 146px;
+		top: 0px;
+		overflow: visible;
+		width: 58px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(0,0,0,1);
+	}
+	#Account {
+		position: absolute;
+		left: 238px;
+		top: 0px;
+		overflow: visible;
+		width: 74px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(0,0,0,1);
+	}
+	#Help_Center {
+		position: absolute;
+		left: 346px;
+		top: 0px;
+		overflow: visible;
+		width: 106px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(0,0,0,1);
+	}
+	#Logout {
+		position: absolute;
+		left: 486px;
+		top: 0px;
+		overflow: visible;
+		width: 64px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(0,0,0,1);
+	}
+	.Line_1 {
+		overflow: visible;
+		position: absolute;
+		top: 80.5px;
+		left: 0.5px;
+		width: 1280px;
+		height: 1px;
+	}
+	#save_event {
+		position: absolute;
+		width: 217px;
+		height: 51px;
+		left: 532px;
+		top: 499px;
+		overflow: visible;
+	}
+	.button_SaveInvitation {
+		position: absolute;
+		overflow: visible;
+		width: 217px;
+		height: 51px;
+		left: 0px;
+		top: 0px;
+	}
+	#Save_Event {
+		position: absolute;
+		left: 58px;
+		top: 12px;
+		overflow: visible;
+		width: 102px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(125,157,233,1);
+	}
+	#event_name {
+		position: absolute;
+		width: 638px;
+		height: 40px;
+		left: 321px;
+		top: 247px;
+		overflow: visible;
+	}
+	#Event_Name {
+		position: absolute;
+		left: 0px;
+		top: 7px;
+		overflow: visible;
+		width: 134px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 25px;
+		color: rgba(0,0,0,1);
+	}
+	.edittext_EditText {
+		position: absolute;
+		overflow: visible;
+		width: 483px;
+		height: 40px;
+		left: 155px;
+		top: 0px;
+	}
+	#end_time {
+		position: absolute;
+		width: 345px;
+		height: 40px;
+		left: 321px;
+		top: 326px;
+		overflow: visible;
+	}
+	#End_Date {
+		position: absolute;
+		left: 0px;
+		top: 7px;
+		overflow: visible;
+		width: 101px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 25px;
+		color: rgba(0,0,0,1);
+	}
+	.datetime_EndTime {
+		position: absolute;
+		overflow: visible;
+		width: 190px;
+		height: 40px;
+		left: 155px;
+		top: 0px;
+	}
+</style>
