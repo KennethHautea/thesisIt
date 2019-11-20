@@ -1,4 +1,4 @@
-
+<style id="applicationStylesheet" type="text/css">
 	.mediaViewInfo {
 		--web-view-name: Signup;
 		--web-view-id: Signup;
@@ -49,7 +49,6 @@
 		left: 546px;
 		top: 859px;
 		overflow: visible;
-		
 	}
 	.Rectangle_5 {
 		position: absolute;
@@ -59,16 +58,9 @@
 		left: 0px;
 		top: 0px;
 		border-radius: 25px;
-		padding-left: 10px;
-		font-family: Bookman Old Style;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 25px;
-		color: rgba(125,157,233,1);
-		
-	    
+	    padding-left: 10px;
+	    border: 1px solid #707070;
 	}
-	/**
 	#SignIn {
 		position: absolute;
 		left: 58px;
@@ -83,7 +75,6 @@
 		font-size: 25px;
 		color: rgba(125,157,233,1);
 	}
-	**/
 	#Password {
 		position: absolute;
 		width: 622px;
@@ -385,4 +376,4 @@
 		left: 50px;
 		top: 16px;
 	}
-	
+</style>
