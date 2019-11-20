@@ -12,15 +12,7 @@
 <title>Rsvp</title>
 </head>
 <body>
-<<<<<<< HEAD:thesis/index.php
-
-=======
-<!--Login Form-->
-<form method="POST" name = "myform" onsubmit = "return validate()">
-<div id="Loginform">
-	<?php include 'navbar.php' ?>
->>>>>>> ffe01d49e7e1f9af050a11a42a9ec8a2d1260e1b:thesis/login.php
-
+<?php include 'navbar.php'?>
 	<svg class="Rectangle_4">
 		<rect fill="rgba(227,227,227,1)" stroke="rgba(0,0,0,1)" stroke-width="1px" stroke-linejoin="miter" 
 		stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_4" rx="30" ry="30" x="0" 
@@ -28,12 +20,8 @@
 		</rect>
 	</svg>
 	
-<<<<<<< HEAD:thesis/index.php
 	<!--Login Form-->
 	<form method="POST" name = "myform" onsubmit = "return validate()" action = "php/login.php">
-=======
-
->>>>>>> ffe01d49e7e1f9af050a11a42a9ec8a2d1260e1b:thesis/login.php
 		<div id="Username">
 			<input type="text" class="edittext_Username" name="username" id="val_username" required  >
 			<div id="Username_A5_Text_6">

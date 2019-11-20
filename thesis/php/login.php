@@ -1,4 +1,4 @@
-<?php include '../config.php'; 
+<?php
 $username = $password = "";
 if(isset($_POST['btn_login'])){
 	
