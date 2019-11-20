@@ -90,51 +90,50 @@ function send_Data(){
 		</rect>
     </svg>
 
-    <!--Signup Form-->
-    <div class="form" id="forms">
-        <form autocomplete="off" method="POST" onsubmit = "return validation();>
-	<div id = "btn_Signup">
-		<input type="submit" name="btn_signup" value="Submit" class="Rectangle_5" onclick = "send_Data();">
-	</div>
-	
-	<div id="Password">
-		<input type="password" name="password" id="edittext_Password" class="edittext_Password" reguired >
-		<div id="Password_A6_Text_2">
-			<span>Password</span>
+    <!--Signup Form-->  
+	<form autocomplete="off" method="POST" onsubmit = "return validation();>
+		<div class="form" id="forms">
+		<div id="EmailAddress">
+			<input type="email" name="emailAddress" id="edittext_EmailAddress" class="edittext_EmailAddress" reguired>
+			<div id="Email_Address">
+				<span>Email Address</span>
+			</div>
 		</div>
-	</div>
-	<div id="Username">
-		<input type="text" name="username" id="edittext_Username" class="edittext_Username" reguired>
-		<div id="Username_A6_Text_3">
-			<span>Username</span>
+		<div id="Middlename">
+			<input type="text" name="middlename" id="edittext_Middlename" class="edittext_Middlename" reguired>
+			<div id="Middlename_A6_Text_5">
+				<span>Middlename</span>
+			</div>
 		</div>
-	</div>
-	<div id="EmailAddress">
-		<input type="email" name="emailAddress" id="edittext_EmailAddress" class="edittext_EmailAddress" reguired>
-		<div id="Email_Address">
-			<span>Email Address</span>
+		<div id="Lastname">
+			<input type="text" name="lastname" id="edittext_Lastname" class="edittext_Lastname" reguired>
+			<div id="Lastname_A6_Text_6">
+				<span>Lastname</span>
+			</div>
 		</div>
-	</div>
-	<div id="Middlename">
-		<input type="text" name="middlename" id="edittext_Middlename" class="edittext_Middlename" reguired>
-		<div id="Middlename_A6_Text_5">
-			<span>Middlename</span>
+		<div id="Firstname"> 
+			<input type="text" name="firstname" id="edittext_Firstname" class="edittext_Firstname" reguired>				
+			<div id="Firstname_A6_Text_7">
+				<span>Firstname</span>
+			</div>
 		</div>
-	</div>
-	<div id="Lastname">
-		<input type="text" name="lastname" id="edittext_Lastname" class="edittext_Lastname" reguired>
-		<div id="Lastname_A6_Text_6">
-			<span>Lastname</span>
+		<div id="Username">
+			<input type="text" name="username" id="edittext_Username" class="edittext_Username" reguired>
+			<div id="Username_A6_Text_3">
+				<span>Username</span>
+			</div>
 		</div>
-	</div>
-	<div id="Firstname"> 
-		<input type="text" name="firstname" id="edittext_Firstname" class="edittext_Firstname" reguired>				
-		<div id="Firstname_A6_Text_7">
-			<span>Firstname</span>
+		<div id="Password">
+			<input type="password" name="password" id="edittext_Password" class="edittext_Password" reguired >
+			<div id="Password_A6_Text_2">
+				<span>Password</span>
+			</div>
 		</div>
-    </div>
+		<div id = "btn_Signup">
+			<input type="submit" name="btn_signup" value="Submit" class="Rectangle_5" onclick = "send_Data();">
+		</div>
+		</div>
     </form>
-    </div>
 
     <!---->
 	<div id="navbar">
@@ -154,7 +153,6 @@ function send_Data(){
 			<a href="login.php">Login</a>
 		</div>
 	</div>
-</div>
 <svg class="logo">
 		<pattern elementId="logo_A5_Rectangle_2" id="logo_A5_Rectangle_2_pattern" x="0" y="0" width="100%" height="100%">
 			<image x="0" y="0" width="100%" height="100%" href="logo_A5_Rectangle_2_pattern.png" xlink:href="logo_A5_Rectangle_2_pattern.png"></image>
@@ -163,5 +161,6 @@ function send_Data(){
 		</rect>
 	</svg>
 </div>
+
 </body>
 </html>
