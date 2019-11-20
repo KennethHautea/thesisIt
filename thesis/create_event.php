@@ -3,8 +3,7 @@
 	<head>
 		<meta charset="utf-8"/>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-		
-		<link rel="stylesheet" type="text/css" href="css/create_event.css">
+		<link rel="stylesheet" type="text/css" href="./style/create_event.css">
 		<link  type="text/css" href="js/create_event.js">
 		<title>Create Event</title>
 	</head>
@@ -12,10 +11,10 @@
 	<body>
 	<div id="Create_Event">
 	<svg class="logo">
-		<pattern elementId="logo_A2_Rectangle_2" id="logo_A2_Rectangle_2_pattern" x="0" y="0" width="100%" height="100%">
-			<image x="0" y="0" width="100%" height="100%" href="logo_A2_Rectangle_2_pattern.png" xlink:href="logo_A2_Rectangle_2_pattern.png"></image>
+		<pattern elementId="logo_A5_Rectangle_2" id="logo_A5_Rectangle_2_pattern" x="0" y="0" width="100%" height="100%">
+			<image x="0" y="0" width="100%" height="100%" href="logo_A5_Rectangle_2_pattern.png" xlink:href="logo_A5_Rectangle_2_pattern.png"></image>
 		</pattern>
-		<rect fill="url(#logo_A2_Rectangle_2_pattern)" id="logo" rx="0" ry="0" x="0" y="0" width="165" height="53">
+		<rect fill="url(#logo_A5_Rectangle_2_pattern)" id="logo" rx="0" ry="0" x="0" y="0" width="165" height="53">
 		</rect>
 	</svg>
 	<div id="navbar">

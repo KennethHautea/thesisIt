@@ -1,29 +1,5 @@
-<?php include_once 'config.php'; 
-	
-$username = $password = "";
-if(isset($_POST['btn_login'])){
-	
-	if(!empty($_POST['username'])||!empty($_POST('password'))){
-		$username = $_POST['username'];
-		$password = $_POST['password'];
-
-		$password = strip_tags(mysqli_real_escape_string($conn,trim($password)));
-		$query = "SELECT 	UserName,Passwords 
-										FROM registeredhost 
-										WHERE UserName='".$username."'and Passwords = '".$password."' ";
-		$result = mysqli_query($conn,$query);								
-	
-	if(mysqli_num_rows($result) > 1){
-		$row = mysqli_fetch_array($result);
-		$hash = $row['password'];
-	
-		if(password_verify($password,$hash)){
-			echo 'YAseajhsvfgjhkdw,hgmf';
-		}
-	}
-	}
-}
-	
+<?php include 'config.php'; 
+      include 'php/login.php';	
 ?>
 
 <!DOCTYPE html>
@@ -34,11 +10,9 @@ if(isset($_POST['btn_login'])){
 <link rel="stylesheet" href="./style/loginstyle.css">
 <link  href="./js/loginstyle.js">
 <title>Rsvp</title>
-
-
 </head>
 <body>
-<p><?php echo $password; ?></p>
+
 
 <script type = "text/javascript">
 function validate(){
@@ -84,7 +58,7 @@ function validate(){
 	</svg>
 	
 	<!--Login Form-->
-	<form method="POST" name = "myform" onsubmit = "return validate()">
+	<form method="POST" name = "myform" onsubmit = "return validate()" action = "php/login.php">
 		<div id="Username">
 			<input type="text" class="edittext_Username" name="username" id="val_username" required  >
 			<div id="Username_A5_Text_6">

@@ -1,4 +1,5 @@
-<?php include_once 'config.php'; 
+<?php include 'config.php';
+	
 
 $firstname = $lastname = $middlename = $emailAddress = $username =$password = ""; 
 
@@ -19,7 +20,7 @@ if(isset($_POST['btn_signup'])){
 		if($result){
 			echo '<script type="text/javascript">  
 						if(window.confirm("Successfully Inserted")){
-							window.location.href = "login.php"
+							window.location.href = "index.php"
 						}
 			
 			</script>';
@@ -91,8 +92,8 @@ function send_Data(){
 
     <!--Signup Form-->
     <div class="form" id="forms">
-        <form autocomplete="off" method="POST" onsubmit = "return validation();">
-	<div id="btn_Signup">
+        <form autocomplete="off" method="POST" onsubmit = "return validation();>
+	<div id = "btn_Signup">
 		<input type="submit" name="btn_signup" value="Submit" class="Rectangle_5" onclick = "send_Data();">
 	</div>
 	
