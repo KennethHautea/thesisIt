@@ -9,7 +9,7 @@
 <title>Create Event</title>
 </head>
 <body>
-<div id="Create_Event">
+<div id="Create_Eventform">
 	<?php include 'navbar.php' ?>
 	<div id="save_event">
 		<div class="button_SaveInvitation">

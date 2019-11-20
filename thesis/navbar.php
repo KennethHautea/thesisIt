@@ -3,7 +3,7 @@
 </div>
 <div id="navbar">
 	<div id="Create_Event">
-		<a href="#">Create Event</a>
+		<a href="Create_Event.php">Create Event</a>
 	</div>
 	<div id="Events">
 		<a href="#">Events</a>
@@ -15,7 +15,7 @@
 		<a href="#">Help Center</a>
 	</div>
 	<div id="Login">
-		<<?php include("php/navbar_selector.php"); ?>
+		<a href="login.php">Login</a>
 	</div>
 </div>
 <svg class="Line_1">
