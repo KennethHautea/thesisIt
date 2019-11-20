@@ -15,7 +15,7 @@
 		<a href="#">Help Center</a>
 	</div>
 	<div id="Login">
-		<a href="login.html">Login</a>
+		<<?php include("php/navbar_selector.php"); ?>
 	</div>
 </div>
 <svg class="Line_1">
