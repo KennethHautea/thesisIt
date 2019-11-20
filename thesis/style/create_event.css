@@ -127,10 +127,10 @@
 	}
 	#save_event {
 		position: absolute;
-		width: 217px;
+		width: 186px;
 		height: 51px;
 		left: 532px;
-		top: 571px;
+		top: 350px;
 		overflow: visible;
 	}
 	.button_SaveInvitation {
@@ -160,7 +160,7 @@
 		width: 638px;
 		height: 40px;
 		left: 321px;
-		top: 319px;
+		top: 220px;
 		overflow: visible;
 	}
 	#Event_Name {
@@ -181,16 +181,19 @@
 		position: absolute;
 		overflow: visible;
 		width: 483px;
-		height: 40px;
+		height: 30px;
 		left: 155px;
-		top: 0px;
+		top: 10px;
+		border-radius:10px;
+		border: 1px solid #707070;
+		
 	}
 	#end_time {
 		position: absolute;
 		width: 345px;
 		height: 40px;
 		left: 321px;
-		top: 398px;
+		top: 275px;
 		overflow: visible;
 	}
 	#End_Date {
@@ -210,9 +213,12 @@
 	.datetime_EndTime {
 		position: absolute;
 		overflow: visible;
-		width: 190px;
-		height: 40px;
+		width: 145px;
+		height: 30px;
 		left: 155px;
-		top: 0px;
+		top: 10px;
+		border-radius:10px;
+		border: 1px solid #707070;
+		text-align: center;
 	}
 </style>
