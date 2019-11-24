@@ -1,5 +1,3 @@
-<?php
-?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -12,7 +10,7 @@
 	</head>
 	<body>
 	
-<form method="POST" onsubmit="return validate()">
+<form method="POST" >
 <div id="Create_Eventform">
 <?php include 'navbar.php' ?>
 
@@ -28,18 +26,17 @@
 		if(mysqli_num_rows($res_n) > 0){
 			echo '<script type="text/javascript">  
 						if(window.alert("Event Name already existed! Please provide another name.")){
-							window.location.href = "index.php"
+							window.location.href = "create_event.php"
 						}
 					</script>';
 		}
 		else {
-			$result = mysqli_query($conn, "INSERT INTO eventdetails(EventName, EventEnd, EventStart) VALUES('$eventname', '$eventenddate', curdate())");
-			echo '<script type="text/javascript">  
-						if(window.alert("You have successfully created an event!")){
-							window.location.href="index.php"
-						}
-					</script>';
+			$result = mysqli_query($conn, "INSERT INTO eventdetails(EventName, EventEnd) VALUES('$eventname', '$eventenddate')");
+
+			header ('location: Create_Invitation.php');
+			
 		}
+		
 		}
 	}
 	
