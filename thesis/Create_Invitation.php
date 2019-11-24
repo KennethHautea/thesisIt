@@ -40,46 +40,31 @@
 		<span>Select Template</span>
 	</div>
 	<div id="Message">
-		<svg class="edittext_Message">
-			<rect fill="rgba(255,255,255,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="edittext_Message" rx="19" ry="19" x="0" y="0" width="622" height="197">
-			</rect>
-		</svg>
+		<input type="text" name="message" class="edittext_Message">
 		<div id="Message_A4_Text_3">
 			<span>Message</span>
 		</div>
 	</div>
 	<div id="Time">
-		<svg class="edittext_Time">
-			<rect fill="rgba(255,255,255,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="edittext_Username" rx="19" ry="19" x="0" y="0" width="235" height="48">
-			</rect>
-		</svg>
+		<input type="time" name="time" class="edittext_Time">	
 		<div id="Time_A4_Text_4">
 			<span>Time</span>
 		</div>
 	</div>
 	<div id="Date">
-		<svg class="edittext_Date">
-			<rect fill="rgba(255,255,255,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="edittext_Date" rx="19" ry="19" x="0" y="0" width="235" height="48">
-			</rect>
-		</svg>
+		<input type="date" name="date" class="edittext_Date">
 		<div id="Date_A4_Text_5">
 			<span>Date</span>
 		</div>
 	</div>
 	<div id="Attire">
-		<svg class="edittext_Attire">
-			<rect fill="rgba(255,255,255,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="edittext_Attire" rx="19" ry="19" x="0" y="0" width="622" height="48">
-			</rect>
-		</svg>
+		<input type="text" name="date" class="edittext_Attire">
 		<div id="Attire_A4_Text_6">
 			<span>Attire</span>
 		</div>
 	</div>
 	<div id="Venue">
-		<svg class="edittext_Venue">
-			<rect fill="rgba(255,255,255,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="edittext_Venue" rx="19" ry="19" x="0" y="0" width="622" height="48">
-			</rect>
-		</svg>
+		<input type="text" name="date" class="edittext_Venue">
 		<div id="Venue_A4_Text_7">
 			<span>Venue</span>
 		</div>
