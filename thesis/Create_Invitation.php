@@ -10,29 +10,11 @@
 <body>
 <div id="Create_Invitation">
 	<div id="btn_SaveInvitation">
-		<svg class="Rectangle_5">
-			<rect fill="rgba(255,255,255,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_5" rx="29" ry="29" x="0" y="0" width="289" height="58">
-			</rect>
-		</svg>
-		<div id="Save_invitation">
-			<span>Save invitation</span>
-		</div>
+		<input type="submit" name="Save invitation" class="Rectangle_5" id="Save_invitation">
 	</div>
 	<div id="Templates">
 		<svg class="Template_1">
 			<rect fill="rgba(255,255,255,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Template_1" rx="0" ry="0" x="0" y="0" width="235" height="163">
-			</rect>
-		</svg>
-		<svg class="Template_2">
-			<rect fill="rgba(255,255,255,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Template_2" rx="0" ry="0" x="0" y="0" width="235" height="163">
-			</rect>
-		</svg>
-		<svg class="Template_3">
-			<rect fill="rgba(255,255,255,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Template_3" rx="0" ry="0" x="0" y="0" width="235" height="163">
-			</rect>
-		</svg>
-		<svg class="Template_4">
-			<rect fill="rgba(255,255,255,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Template_4" rx="0" ry="0" x="0" y="0" width="235" height="163">
 			</rect>
 		</svg>
 	</div>
@@ -40,7 +22,7 @@
 		<span>Select Template</span>
 	</div>
 	<div id="Message">
-		<input type="text" name="message" class="edittext_Message">
+		<textarea name="message" rows="20" cols="50" class="edittext_Message"></textarea>
 		<div id="Message_A4_Text_3">
 			<span>Message</span>
 		</div>
