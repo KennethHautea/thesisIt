@@ -131,6 +131,9 @@
 		height: 197px;
 		left: 0px;
 		top: 39px;
+		border-radius: 25px;
+		border: 1px solid #707070;
+		padding: 15px;
 	}
 	#Message_A4_Text_3 {
 		position: absolute;
@@ -157,10 +160,13 @@
 	.edittext_Time {
 		position: absolute;
 		overflow: visible;
-		width: 235px;
+		width: 170px;
 		height: 30px;
 		left: 0px;
 		top: 39px;
+		border-radius: 25px;
+		text-align: center;
+		border: 1px solid #707070;
 	}
 	#Time_A4_Text_4 {
 		position: absolute;
@@ -187,10 +193,13 @@
 	.edittext_Date {
 		position: absolute;
 		overflow: visible;
-		width: 235px;
+		width: 170px;
 		height: 30px;
 		left: 0px;
 		top: 39px;
+	    border-radius: 25px;
+	    border: 1px solid #707070;
+	    text-align: center;
 	}
 	#Date_A4_Text_5 {
 		position: absolute;
@@ -221,6 +230,8 @@
 		height: 30px;
 		left: 0px;
 		top: 39px;
+	    border-radius: 25px;
+	    border: 1px solid #707070;
 	}
 	#Attire_A4_Text_6 {
 		position: absolute;
@@ -251,6 +262,8 @@
 		height: 30px;
 		left: 0px;
 		top: 39px;
+	    border-radius: 25px;
+	   	border: 1px solid #707070;
 	}
 	#Venue_A4_Text_7 {
 		position: absolute;
@@ -279,100 +292,6 @@
 		font-weight: normal;
 		font-size: 25px;
 		color: rgba(0,0,0,1);
-	}
-	.Line_1 {
-		overflow: visible;
-		position: absolute;
-		top: 80.5px;
-		left: 0.5px;
-		width: 1280px;
-		height: 1px;
-	}
-	#navbar {
-		position: absolute;
-		width: 549px;
-		height: 27px;
-		left: 689px;
-		top: 29px;
-		overflow: visible;
-	}
-	#Create_Event {
-		position: absolute;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-		width: 112px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: Segoe UI;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 20px;
-		color: rgba(0,0,0,1);
-	}
-	#Events {
-		position: absolute;
-		left: 146px;
-		top: 0px;
-		overflow: visible;
-		width: 58px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: Segoe UI;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 20px;
-		color: rgba(0,0,0,1);
-	}
-	#Account {
-		position: absolute;
-		left: 238px;
-		top: 0px;
-		overflow: visible;
-		width: 74px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: Segoe UI;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 20px;
-		color: rgba(0,0,0,1);
-	}
-	#Help_Center {
-		position: absolute;
-		left: 346px;
-		top: 0px;
-		overflow: visible;
-		width: 106px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: Segoe UI;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 20px;
-		color: rgba(0,0,0,1);
-	}
-	#Logout {
-		position: absolute;
-		left: 486px;
-		top: 0px;
-		overflow: visible;
-		width: 64px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: Segoe UI;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 20px;
-		color: rgba(0,0,0,1);
-	}
-	.logo {
-		position: absolute;
-		overflow: visible;
-		width: 165px;
-		height: 53px;
-		left: 50px;
-		top: 16px;
 	}
 	.Rectangle_6 {
 		position: absolute;
