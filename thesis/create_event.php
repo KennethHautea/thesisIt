@@ -20,13 +20,13 @@
 		<div id="Event_Name">
 			<span>Event Name</span>
 		</div>
-		<input type="text" name="" class="edittext_EditText">
+		<input type="text" name="" class="edittext_EditText" required>
 	</div>
 	<div id="end_time">
 		<div id="End_Date">
 			<span>End Date</span>
 		</div>
-		<input type="date" name="" class="datetime_EndTime">
+		<input type="date" name="" class="datetime_EndTime" required>
 		
 	</div>
 </div>

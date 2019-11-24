@@ -15,7 +15,7 @@
 		<a href="#">Help Center</a>
 	</div>
 	<div id="Login">
-		<a href="login.php">Login</a>
+		<a href="index.php">Login</a>
 	</div>
 </div>
 <svg class="Line_1">

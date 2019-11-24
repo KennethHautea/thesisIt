@@ -7,12 +7,13 @@ $firstname = $lastname = $middlename = $emailAddress = $username =$password = ""
 if(isset($_POST['btn_signup'])){
 	if(!empty ($_POST['firstname'])||!empty ($_POST['middlename'])||!empty ($_POST['lastname'])||!empty ($_POST['emailAddress'])||
 	!empty ($_POST['username'])||!empty ($_POST['password'])){
-		$firstname = $_POST['firstname'];
-		$middlename = $_POST['middlename'];
-		$lastname = $_POST['lastname'];
-		$emailAddress = $_POST['emailAddress'];
-		$username = $_POST['username'];
-		$password = PASSWORD_HASH($_POST["password"], PASSWORD_DEFAULT);
+		$firstname = mysqli_real_escape_string($conn,$_POST['firstname']);
+		$middlename = mysqli_real_escape_string($conn,$_POST['middlename']);
+		$lastname = mysqli_real_escape_string($conn,$_POST['lastname']) ;
+		$emailAddress = mysqli_real_escape_string($conn,$_POST['emailAddress']);
+		$username = mysqli_real_escape_string($conn,$_POST['username']) ;
+		$password = mysqli_real_escape_string($conn,$_POST['password']);
+		$password = PASSWORD_HASH($password, PASSWORD_DEFAULT);
 		
 		$result  = mysqli_query($conn,"INSERT INTO registeredhost(UserName,FirstName,MiddleName,LastName,Dates,
 		EmailAddress,Passwords) VALUES('$username','$firstname','$middlename','$lastname',' ','$emailAddress','$password')");

@@ -1,6 +1,4 @@
-<?php include 'config.php'; 
-      include 'php/login.php';	
-?>
+
 
 <!DOCTYPE html>
 <html>
