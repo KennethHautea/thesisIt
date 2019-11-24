@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-<link rel="stylesheet" type="text/css" href="css/createInvitation.css">
+<link rel="stylesheet" type="text/css" href="style/createInvitation.css">
+<link rel="stylesheet" type="text/css" href="style/signupstyle.css">
 <title>Create Invitation</title>
 </head>
 <body>
@@ -86,34 +87,7 @@
 	<div id="Invitation_Details">
 		<span>Invitation Details</span>
 	</div>
-	<svg class="Line_1">
-		<path fill="transparent" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Line_1" d="M 0 0 L 1280 0">
-		</path>
-	</svg>
-	<div id="navbar">
-		<div id="Create_Event">
-			<span>Create Event</span>
-		</div>
-		<div id="Events">
-			<span>Events</span>
-		</div>
-		<div id="Account">
-			<span>Account</span>
-		</div>
-		<div id="Help_Center">
-			<span>Help Center</span>
-		</div>
-		<div id="Logout">
-			<span>Logout</span>
-		</div>
-	</div>
-	<svg class="logo">
-		<pattern elementId="logo_A4_Rectangle_12" id="logo_A4_Rectangle_12_pattern" x="0" y="0" width="100%" height="100%">
-			<image x="0" y="0" width="100%" height="100%" href="logo_A4_Rectangle_12_pattern.png" xlink:href="logo_A4_Rectangle_12_pattern.png"></image>
-		</pattern>
-		<rect fill="url(#logo_A4_Rectangle_12_pattern)" id="logo" rx="0" ry="0" x="0" y="0" width="165" height="53">
-		</rect>
-	</svg>
+	<?php include 'navbar.php' ?>
 	<svg class="Rectangle_6">
 		<rect fill="rgba(235,235,235,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_6" rx="43" ry="43" x="0" y="0" width="523" height="741">
 		</rect>
