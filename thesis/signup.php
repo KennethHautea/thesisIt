@@ -9,7 +9,7 @@
 <link type="text/css" href="js/signupstyle.js">
 </head>
 <body>
-<form method="POST" onsubmit="return validate()">
+<form method="POST">
 <div id="Signup">
 	<svg class="Rectangle_4">
 		<rect fill="rgba(227,227,227,1)" stroke="rgba(0,0,0,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_4" rx="30" ry="30" x="0" y="0" width="708" height="835">
@@ -17,7 +17,7 @@
     </svg>
 
     <!--Signup Form-->  
-	<form autocomplete="off" method="POST" onsubmit = "return validation();>
+	<form autocomplete="off" method="POST">
 		<div class="form" id="forms">
 		<div id="EmailAddress">
 			<input type="email" name="emailAddress" id="edittext_EmailAddress" class="edittext_EmailAddress" reguired>
@@ -56,7 +56,7 @@
 			</div>
 		</div>
 		<div id = "btn_Signup">
-			<input type="submit" name="btn_signup" value="Submit" class="Rectangle_5" onclick = "send_Data();">
+			<input type="submit" name="btn_signup" value="Submit" class="Rectangle_5">
 		</div>
 		</div>
     </form>

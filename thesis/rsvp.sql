@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 4.9.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 20, 2019 at 01:39 PM
--- Server version: 10.4.6-MariaDB
--- PHP Version: 7.3.8
+-- Generation Time: Nov 24, 2019 at 06:25 PM
+-- Server version: 10.4.8-MariaDB
+-- PHP Version: 7.3.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `eventdetails` (
   `TemplateId` int(11) NOT NULL,
-  `HostId` int(11) DEFAULT NULL,
+  `HostId` int(11) NOT NULL,
   `EventId` int(11) NOT NULL,
   `EventName` varchar(50) DEFAULT NULL,
   `EventVenue` varchar(50) DEFAULT NULL,
@@ -81,7 +81,7 @@ CREATE TABLE `registeredhost` (
   `LastName` varchar(50) DEFAULT NULL,
   `Dates` datetime DEFAULT NULL,
   `EmailAddress` varchar(50) DEFAULT NULL,
-  `Passwords` varchar(50) DEFAULT NULL
+  `Passwords` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -89,14 +89,7 @@ CREATE TABLE `registeredhost` (
 --
 
 INSERT INTO `registeredhost` (`HostId`, `UserName`, `FirstName`, `MiddleName`, `LastName`, `Dates`, `EmailAddress`, `Passwords`) VALUES
-(1, 'omygod', 'kenneth', 'e', 'gulle', '0000-00-00 00:00:00', 'gulle_k@yahoo.com', '$2y$10$ZaWUTYMDowugjo9hOLZBieG0HBbk0K3Zss.s0zBTgfE'),
-(12, 'asd', 'asd', 'asd', 'asd', '0000-00-00 00:00:00', 'gulle_@gmail.com', '$2y$10$i33lRnD.wcpDkK0HC93CiuBRqOEGmYlrTO7Fhts9.wF'),
-(13, 'asd', 'asd', 'asd', 'asd', '0000-00-00 00:00:00', 'g@gmail.com', '$2y$10$pP3bpNwzF79xeYk1P6/.O.vSu.HkonZCYQdayCqbHZh'),
-(14, 'asd', 'asd', 'asd', 'asd', '0000-00-00 00:00:00', 'gulle@yahoo.com', '$2y$10$BgQwmWg8s7w5WxsRcC/ERudtIGe7z.Tl51R1kQ8Calh'),
-(15, 'username', 'paul', 'packing', 'onggona', '0000-00-00 00:00:00', 'paul@onggona', '$2y$10$CvCdKJguswuw6XGOz/tzC.Dx2MwpzHOjLbfXBenk3Cj'),
-(16, 'sdasdasdasda', 'asdasd', 'asdasda', 'asdasd', '0000-00-00 00:00:00', 'gulle_k@yahoo.com', '$2y$10$EVFzTv95QGyWFGxK4uJY3e2wJg.omKdRKDb7QXicEJr'),
-(17, 'sdasdasd', 'asdfghj', 'asdas', 'asdasd', '0000-00-00 00:00:00', 'mark@gmail.com', '$2y$10$vUWo.2lFAubZXH5eD8kbRu8T6Gv1Cu1pLoVg9p0PnRz'),
-(18, 'tyu', 'sdfhjkl', 'ertyui', 'qwertyui', '0000-00-00 00:00:00', 'rty@gmail.com', '$2y$10$83Gt74bk5SiB/ie4ET9f5eSdwASeNgt6CMcD6Yd5WOY');
+(19, 'den', 'Denmark', 'V', 'Romo', '0000-00-00 00:00:00', 'example@example.com', '$2y$10$GIXRS4.aRn5sdlqxsFqiiOePmysqVO8OsHeXRD4R9b2IpwK5M6d16');
 
 -- --------------------------------------------------------
 
@@ -214,7 +207,7 @@ ALTER TABLE `primaryguestlist`
 -- AUTO_INCREMENT for table `registeredhost`
 --
 ALTER TABLE `registeredhost`
-  MODIFY `HostId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `HostId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `secondaryguestlist`
