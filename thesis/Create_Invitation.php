@@ -1,4 +1,21 @@
-<?php include 'config.php' ?>
+<?php 
+	$conn  = mysqli_connect ("localhost","root","","rsvp");
+
+	if (isset($_POST['btn_saveinvitation'])) {
+		$venue = $_POST['venue'];
+		$attire = $_POST['attire'];
+		$message = $_POST['message'];
+			$sql = "INSERT INTO eventdetails (EventVenue, 	EventAttire, EventDescription) VALUES ('$venue','$attire','$message')";
+			if ($conn->query($sql) === TRUE) {
+				$addDetails = "INSERT INTO eventdetails (EventVenue, 	EventAttire, EventDescription) VALUES ('$venue','$attire','$message')";
+				echo "added";
+			}else {
+				echo "Error: " . $sql . "<br>" . $conn->error;
+			}
+		}
+		
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,9 +27,10 @@
 </head>
 <body>
 	<form>
+		
 		<div id="Create_Invitation">
 			<div id="btn_SaveInvitation">
-				<input type="submit" name="save invitation" class="Rectangle_5" id="Save_invitation">
+				<input type="submit" name="btn_saveinvitation" class="Rectangle_5" id="Save_invitation">
 			</div>
 			<div id="Templates">
 				<svg class="Template_1">

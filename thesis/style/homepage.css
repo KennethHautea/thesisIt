@@ -1,0 +1,350 @@
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: Homepage;
+		--web-view-id: Homepage;
+		--web-scale-on-resize: true;
+		--web-center-horizontally: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Homepage;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	#Homepage {
+		position: absolute;
+		box-sizing: border-box;
+		transform: translateX(-50%);
+		left: 50%;
+		background: #E5E5E5;
+		width: 1280px;
+		height: 796px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		--web-view-name: Homepage;
+		--web-view-id: Homepage;
+		--web-scale-on-resize: true;
+		--web-center-horizontally: true;
+		--web-enable-deep-linking: true;
+	}
+	.logo {
+		position: absolute;
+		overflow: visible;
+		width: 165px;
+		height: 53px;
+		left: 50px;
+		top: 16px;
+	}
+	#navbar {
+		position: absolute;
+		width: 549px;
+		height: 27px;
+		left: 689px;
+		top: 29px;
+		overflow: visible;
+	}
+	#Create_Event {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+		width: 112px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(0,0,0,1);
+	}
+	#Events {
+		position: absolute;
+		left: 146px;
+		top: 0px;
+		overflow: visible;
+		width: 58px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(0,0,0,1);
+	}
+	#Account {
+		position: absolute;
+		left: 238px;
+		top: 0px;
+		overflow: visible;
+		width: 74px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(0,0,0,1);
+	}
+	#Help_Center {
+		position: absolute;
+		left: 346px;
+		top: 0px;
+		overflow: visible;
+		width: 106px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(0,0,0,1);
+	}
+	#Logout {
+		position: absolute;
+		left: 486px;
+		top: 0px;
+		overflow: visible;
+		width: 64px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(0,0,0,1);
+	}
+	.Line_1 {
+		overflow: visible;
+		position: absolute;
+		top: 80.5px;
+		left: 0.5px;
+		width: 1280px;
+		height: 1px;
+	}
+	#event_details {
+		position: absolute;
+		width: 178px;
+		height: 99px;
+		left: 50px;
+		top: 134px;
+		overflow: visible;
+	}
+	#Sample_Event {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+		width: 179px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(0,0,0,1);
+	}
+	#Starts_in_30_days {
+		position: absolute;
+		left: 0px;
+		top: 40px;
+		overflow: visible;
+		width: 166px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 23px;
+		color: rgba(0,0,0,1);
+	}
+	#edit_details {
+		position: absolute;
+		left: 0px;
+		top: 72px;
+		overflow: visible;
+		width: 105px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(125,157,233,1);
+	}
+	.Rectangle_1 {
+		position: absolute;
+		overflow: visible;
+		width: 1188px;
+		height: 96px;
+		left: 46px;
+		top: 470px;
+	}
+	#guest {
+		position: absolute;
+		width: 114px;
+		height: 51px;
+		left: 105px;
+		top: 493px;
+		overflow: visible;
+	}
+	.button_Guest {
+		position: absolute;
+		overflow: visible;
+		width: 114px;
+		height: 51px;
+		left: 0px;
+		top: 0px;
+	}
+	#Guest {
+		position: absolute;
+		left: 30px;
+		top: 12px;
+		overflow: visible;
+		width: 55px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(125,157,233,1);
+	}
+	#Invitation {
+		position: absolute;
+		width: 217px;
+		height: 51px;
+		left: 249px;
+		top: 493px;
+		overflow: visible;
+	}
+	.button_CreateInvitation {
+		position: absolute;
+		overflow: visible;
+		width: 217px;
+		height: 51px;
+		left: 0px;
+		top: 0px;
+	}
+	#Create_Invitation {
+		position: absolute;
+		left: 30px;
+		top: 12px;
+		overflow: visible;
+		width: 158px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(125,157,233,1);
+	}
+	#Preview_Invitation {
+		position: absolute;
+		width: 231px;
+		height: 51px;
+		left: 496px;
+		top: 493px;
+		overflow: visible;
+	}
+	.button_PreviewInvitation {
+		position: absolute;
+		overflow: visible;
+		width: 231px;
+		height: 51px;
+		left: 0px;
+		top: 0px;
+	}
+	#Preview_Invitation_A1_Text_11 {
+		position: absolute;
+		left: 30px;
+		top: 12px;
+		overflow: visible;
+		width: 172px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(125,157,233,1);
+	}
+	#gallery {
+		position: absolute;
+		width: 127px;
+		height: 51px;
+		left: 757px;
+		top: 493px;
+		overflow: visible;
+	}
+	.button_Gallery {
+		position: absolute;
+		overflow: visible;
+		width: 127px;
+		height: 51px;
+		left: 0px;
+		top: 0px;
+	}
+	#Gallery {
+		position: absolute;
+		left: 30px;
+		top: 12px;
+		overflow: visible;
+		width: 68px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(125,157,233,1);
+	}
+	#disable_button_ {
+		position: absolute;
+		width: 178px;
+		height: 51px;
+		left: 993px;
+		top: 493px;
+		overflow: visible;
+	}
+	.button_DisableEvent {
+		position: absolute;
+		overflow: visible;
+		width: 178px;
+		height: 51px;
+		left: 0px;
+		top: 0px;
+	}
+	#Disable_Event {
+		position: absolute;
+		left: 26px;
+		top: 12px;
+		overflow: visible;
+		width: 127px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#First_thing_to_do_is_to_add_so {
+		position: absolute;
+		left: 257px;
+		top: 379px;
+		overflow: visible;
+		width: 767px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 37px;
+		color: rgba(0,0,0,1);
+	}
+</style>
