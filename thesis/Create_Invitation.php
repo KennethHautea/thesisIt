@@ -49,7 +49,7 @@
 		</div>
 	</div>
 	<div id="Time">
-		<svg class="edittext_Username">
+		<svg class="edittext_Time">
 			<rect fill="rgba(255,255,255,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="edittext_Username" rx="19" ry="19" x="0" y="0" width="235" height="48">
 			</rect>
 		</svg>
