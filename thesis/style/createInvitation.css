@@ -232,6 +232,7 @@
 		top: 39px;
 	    border-radius: 25px;
 	    border: 1px solid #707070;
+	    padding-left: 10px;
 	}
 	#Attire_A4_Text_6 {
 		position: absolute;
@@ -264,6 +265,7 @@
 		top: 39px;
 	    border-radius: 25px;
 	   	border: 1px solid #707070;
+	   	padding-left: 10px;
 	}
 	#Venue_A4_Text_7 {
 		position: absolute;
