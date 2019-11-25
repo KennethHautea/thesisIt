@@ -1,4 +1,40 @@
-<?php include 'config.php' ?>
+<?php include 'config.php' ;
+$venue = $attire = $date = $time = $message = "";
+
+if(isset($_POST['btn_saveInvitation'])){
+	if(!empty($_POST['venue']) || !empty($_POST['attire'])||!empty($_POST['date'])||!empty($_POST['time'])
+	||!empty($_POST['message'])){
+		$venue = $_POST['venue'];
+		$attire = $_POST['attire'];
+		$date = $_POST['date'];
+		$time = $_POST['time'];
+		$message = $_POST['message'];
+		
+		$sql = "INSERT INTO eventdetails(EventVenue,EventAttire,EventDescription)
+				VALUES('$venue','$attire','$message')";
+		if($conn->query($sql) === TRUE){
+			echo "New record created successfully";
+		}else{
+			echo "Error: " . $sql . "<br>" . $conn->error;
+		}
+
+		/**$insertEventDetails = mysqli_query($conn,"INSERT INTO eventdetails(EventVenue,EventAttire,EventDescription)
+		*											VALUES('$venue','$attire','$message'')");
+		*if($insertEventDetails ){
+		*	echo '<script type="text/javascript">  
+						
+		*	window.alert("Successfully Inserted");
+						
+			
+		*	</script>';
+			
+		*}else{
+		*	echo 'not inserted';
+		*}
+		*/
+	}
+ }
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,10 +45,10 @@
 <title>Create Invitation</title>
 </head>
 <body>
-	<form>
+	<form action = "" method="POST">
 		<div id="Create_Invitation">
 			<div id="btn_SaveInvitation">
-				<input type="submit" name="save invitation" class="Rectangle_5" id="Save_invitation">
+				<input type="submit" name="btn_saveInvitation" class="Rectangle_5" id="Save_invitation">
 			</div>
 			<div id="Templates">
 				<svg class="Template_1">
@@ -36,31 +72,31 @@
 				<span>Select Template</span>
 			</div>
 			<div id="Message">
-				<textarea name="message" class="edittext_Message"></textarea>
+				<textarea name="message" class="edittext_Message" required></textarea >
 				<div id="Message_A4_Text_3">
 					<span>Message</span>
 				</div>
 			</div>
 			<div id="Time">
-				<input type="time" name="time" class="edittext_Time">
+				<input type="time" name="time" class="edittext_Time" required>
 				<div id="Time_A4_Text_4">
 					<span>Time</span>
 				</div>
 			</div>
 			<div id="Date">
-				<input type="date" name="date" class="edittext_Date" >
+				<input type="date" name="date" class="edittext_Date"required >
 				<div id="Date_A4_Text_5">
 					<span>Date</span>
 				</div>
 			</div>
 			<div id="Attire">
-				<input type="text" name="attire" class="edittext_Attire">
+				<input type="text" name="attire" class="edittext_Attire" required>
 				<div id="Attire_A4_Text_6">
 					<span>Attire</span>
 				</div>
 			</div>
 			<div id="Venue">
-				<input type="text" name="venue" class="edittext_Venue">
+				<input type="text" name="venue" class="edittext_Venue" required>
 				<div id="Venue_A4_Text_7">
 					<span>Venue</span>
 				</div>
