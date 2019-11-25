@@ -14,43 +14,28 @@ if(isset($_POST['btn_signup'])){
 		$password = mysqli_real_escape_string($conn,$_POST['password']);
 		$password = PASSWORD_HASH($password, PASSWORD_DEFAULT);
 		
-		$result  = mysqli_query($conn,"INSERT INTO registeredhost(UserName,FirstName,MiddleName,LastName,Dates,
-		EmailAddress,Passwords) VALUES('$username','$firstname','$middlename','$lastname',' ','$emailAddress','$password')");
-		
-		if($result){
-			echo '<script type="text/javascript">  
-						if(window.confirm("Successfully Inserted")){
-							window.location.href = "index.php"
-						}
-			
-			</script>';
-			
-		}
-	}
+		$host = $conn -> query("SELECT * FROM registeredhost WHERE UserName = '$username'");
+		$host_count = mysqli_num_rows($host);
 
-	/** 
-*	if(!empty ($_POST['firstname'])){
-*		$firstname = $_POST['firstname'];
-*	}
-*	if(!empty ($_POST['lastname'])){
-*		$lastname = $_POST['lastname'];
-*	}
-*	if(!empty ($_POST['middlename'])){
-*		$middlename = $_POST['middlename'];
-*	}
-	 
-*	if(!empty ($_POST['emailAddress'])){
-*		$emailAddress = $_POST['emailAddress'];
-*	}
-	
-*	if(!empty ($_POST['username'])){
-*		$username = $_POST['username'];
-*	}
-	
-*	if(!empty ($_POST['password'])){
-*		$password = $_POST['password'];
+		if ($host_count>0) {
+			echo "Username already taken";
+		}else{
+			$result  = mysqli_query($conn,"INSERT INTO registeredhost(UserName,FirstName,MiddleName,LastName,Dates,
+			EmailAddress,Passwords) VALUES('$username','$firstname','$middlename','$lastname',' ','$emailAddress','$password')");
+			
+			if($result){
+				echo '<script type="text/javascript">  
+							if(window.confirm("Successfully Inserted")){
+								window.location.href = "index.php"
+							}
+				
+				</script>';
+				
+			}
+		}
+
 		
-*	}	*/
+	}
 	
 }
 ?>

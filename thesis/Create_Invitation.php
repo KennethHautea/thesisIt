@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php include 'config.php' ;
 $venue = $attire = $date = $time = $message = "";
 
@@ -35,6 +36,8 @@ if(isset($_POST['btn_saveInvitation'])){
 	}
  }
 ?>
+
+>>>>>>> 0dc44025e825695fc3a5f2631af9c7aec087592f
 <!DOCTYPE html>
 <html>
 <head>
@@ -45,10 +48,18 @@ if(isset($_POST['btn_saveInvitation'])){
 <title>Create Invitation</title>
 </head>
 <body>
+<<<<<<< HEAD
 	<form action = "" method="POST">
 		<div id="Create_Invitation">
 			<div id="btn_SaveInvitation">
 				<input type="submit" name="btn_saveInvitation" class="Rectangle_5" id="Save_invitation">
+=======
+	<form>
+		
+		<div id="Create_Invitation">
+			<div id="btn_SaveInvitation">
+				<input type="submit" name="btn_saveinvitation" class="Rectangle_5" id="Save_invitation">
+>>>>>>> 0dc44025e825695fc3a5f2631af9c7aec087592f
 			</div>
 			<div id="Templates">
 				<svg class="Template_1">

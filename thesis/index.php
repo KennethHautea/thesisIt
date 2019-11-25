@@ -1,4 +1,4 @@
-<<?php include 'config.php' ?>
+<?php include 'config.php' ?>
 
 <!DOCTYPE html>
 <html>
@@ -19,7 +19,7 @@
 	</svg>
 	
 	<!--Login Form-->
-	<form method="POST" name = "myform" onsubmit = "return validate()" action = "php/login.php">
+	<form method="POST" name = "myform" action = "php/login.php">
 		<div id="Username">
 			<input type="text" class="edittext_Username" name="username" id="val_username" required  >
 			<div id="Username_A5_Text_6">
