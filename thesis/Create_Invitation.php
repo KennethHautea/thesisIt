@@ -1,6 +1,11 @@
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <?php include 'config.php' ;
 $venue = $attire = $date = $time = $message = "";
+=======
+<?php 
+	include 'config.php';
+>>>>>>> Stashed changes
 
 if(isset($_POST['btn_saveInvitation'])){
 	if(!empty($_POST['venue']) || !empty($_POST['attire'])||!empty($_POST['date'])||!empty($_POST['time'])

@@ -16,7 +16,7 @@ if(isset($_POST['btn_login'])){
 	if(!empty($_POST['username']) || !empty($_POST('password'))){
 		$username = mysqli_real_escape_string($conn,$_POST['username']);
 		$password = mysqli_real_escape_string($conn,$_POST['password']);
-		$_SESSION["username"]= $_POST["username"];
+		
 
 //
 		
@@ -27,16 +27,15 @@ if(isset($_POST['btn_login'])){
 			
 			while($row = mysqli_fetch_array($check_user)){
 				if(password_verify($password,$row['Passwords'])){
-					echo 'okey keyohh';
+					$_SESSION["username"]= $username;
+					header ('location: ../create_event.php');
 				}else{
-					echo 'nyawa nani';
+					echo 'Incorrect password';
 				}
 			}
 		}
 		
 	}
-
-	
 	
 }
 

@@ -9,7 +9,7 @@ if(isset($_SESSION["username"])){
 	echo "
 	<div id='navbar'>
 	<div id='Create_Event'>
-		<a href='Create_Event.php' >Create Event</a>
+		<a href='create_event.php' >Create Event</a>
 	</div>
 	<div id='Events'>
 		<a href='create_Invitation.php' >Events</a>
@@ -21,14 +21,14 @@ if(isset($_SESSION["username"])){
 		<a href='help.php'>Help Center</a>
 	</div>
 	<div id='Login'>
-		<a href='index.php'>Login</a>
+		<a href='logout.php'>Logout</a>
 	</div>
 </div>		
 	";
 }else{
 	echo "<div id='navbar'>
 	<div id='Create_Event'>
-		<a href='Create_Event.php'hidden>Create Event</a>
+		<a href='create_event.php'hidden>Create Event</a>
 	</div>
 	<div id='Events'>
 		<a href='create_Invitation.php'hidden>Events</a>

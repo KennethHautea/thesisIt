@@ -1,6 +1,10 @@
+<<<<<<< Updated upstream
 <?php
 
 ?>
+=======
+
+>>>>>>> Stashed changes
 <!DOCTYPE html>
 <html>
 	<head>
@@ -15,7 +19,16 @@
 	
 <form method="POST" onsubmit="return validate()">
 <div id="Create_Eventform">
+<<<<<<< Updated upstream
 <?php include 'navbar.php' ?>
+=======
+<?php 
+include 'config.php';
+include 'navbar.php';
+include 'php/event.php'
+	?>
+	
+>>>>>>> Stashed changes
 	<div id="save_event">
 		<input type="submit" name="" class="Rectangle_5" value="save event">
 	</div>

@@ -6,7 +6,6 @@
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <link rel="stylesheet" href="./style/loginstyle.css">
-<link  href="./js/loginstyle.js">
 <title>Rsvp</title>
 </head>
 <body>
